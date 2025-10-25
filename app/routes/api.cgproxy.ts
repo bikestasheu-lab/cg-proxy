@@ -1,4 +1,3 @@
-// app/routes/api.cgproxy.ts — enkel Oxygen route der slår mål op via OpenAI
 import type { LoaderFunctionArgs } from "@remix-run/node";
 
 export async function loader({ request }: LoaderFunctionArgs) {
@@ -51,3 +50,4 @@ function json(obj: any, status=200) {
     headers: { "Content-Type": "application/json; charset=utf-8" }
   });
 }
+

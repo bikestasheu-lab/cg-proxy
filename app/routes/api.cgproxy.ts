@@ -1,3 +1,4 @@
+// app/routes/api.cgproxy.ts
 import type { LoaderFunctionArgs } from "@remix-run/node";
 
 export async function loader({ request }: LoaderFunctionArgs) {
@@ -50,4 +51,3 @@ function json(obj: any, status=200) {
     headers: { "Content-Type": "application/json; charset=utf-8" }
   });
 }
-
